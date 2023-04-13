@@ -1,4 +1,5 @@
 ﻿using System.Reflection.Metadata;
+using System.Security.Cryptography.X509Certificates;
 
 namespace csharp_abstract_animals
 {
@@ -44,7 +45,25 @@ namespace csharp_abstract_animals
             delfino.Mangia();
             delfino.Verso();
 
-            // ESERCIZIO 2 
+            // ESERCIZIO 2
+            static void FaiVolare(IVolante animale) 
+            {
+                animale.Vola();
+            }
+
+            static void FaiNuotare(INuotante animale)
+            {
+                animale.Nuota();
+            }
+
+            Console.WriteLine("Passerotto2 sta volando: ");
+            Passerotto passerotto2 = new Passerotto();
+            FaiVolare(passerotto2);
+
+
+            Console.WriteLine("Delfino2 sta nuotando: ");
+            Delfino delfino2 = new Delfino();
+            FaiNuotare(delfino2 );
 
         }
     }

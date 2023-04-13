@@ -62,7 +62,7 @@ namespace csharp_abstract_animals
         }
     }
 
-    class Delfino : Animale
+    class Delfino : Animale, INuotante
     {
         public override void Verso()
         {
@@ -71,6 +71,11 @@ namespace csharp_abstract_animals
         public override void Mangia()
         {
             Console.WriteLine("sardina");
+        }
+
+        public void Nuota()
+        {
+            Console.WriteLine("Sto nuotando!!!");
         }
     }
 }
