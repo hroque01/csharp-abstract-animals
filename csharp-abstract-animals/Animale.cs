@@ -61,7 +61,7 @@ namespace csharp_abstract_animals
         }
         public override void Mangia()
         {
-            Console.WriteLine("conigli");
+            Console.WriteLine("sardina");
         }
     }
 }
