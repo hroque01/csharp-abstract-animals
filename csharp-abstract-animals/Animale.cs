@@ -29,7 +29,7 @@ namespace csharp_abstract_animals
         }
     }
 
-    class Passerotto : Animale
+    class Passerotto : Animale, IVolante
     {
         public override void Verso()
         {
@@ -39,9 +39,13 @@ namespace csharp_abstract_animals
         {
             Console.WriteLine("Semi");
         }
+        public void Vola()
+        {
+            Console.WriteLine("Sto volando!!");
+        }
     }
 
-    class Aquila : Animale
+    class Aquila : Animale, IVolante
     {
         public override void Verso()
         {
@@ -50,6 +54,11 @@ namespace csharp_abstract_animals
         public override void Mangia()
         {
             Console.WriteLine("carne");
+        }
+
+        public void Vola()
+        {
+            Console.WriteLine("Sto volando!!");
         }
     }
 
