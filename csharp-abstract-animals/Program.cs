@@ -12,6 +12,34 @@
             Quali di questi metodi devono essere implementati nella classe astratta e quali devono essere lasciati astratti e implementati dalle classi che la estendono?
             Una volta create le classi, nel programma istanziare alcuni animali e utilizzare i metodi implementati.*/
 
+            Animale labrador, passerotto, aquilaReale, delfino;
+
+            Console.WriteLine("--Cane--");
+            labrador = new Cane();
+            labrador.Dormi();
+            labrador.Mangia();
+            labrador.Verso();
+
+            Console.WriteLine("--Passerotto--");
+            passerotto = new Passerotto();
+            passerotto.Dormi();
+            passerotto.Mangia();
+            passerotto.Verso();
+
+            Console.WriteLine("--Aquila--");
+            aquilaReale = new Aquila();
+            aquilaReale.Dormi();
+            aquilaReale.Mangia();
+            aquilaReale.Verso();
+
+            Console.WriteLine("--Delfino--");
+            delfino = new Delfino();
+            delfino.Dormi();
+            delfino.Mangia();
+            delfino.Verso();
+
+
+
         }
     }
 }
